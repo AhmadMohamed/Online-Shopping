@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lake_fade"
+
+    tools:context=".sign_in">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#902196F3"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:layout_height="450dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60dp"
+            android:textStyle="bold"
+            android:textColor="#D51532D6"
+            android:layout_gravity="center"
+            android:text="Sign-In"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:hint="Enter Your Email"
+            android:padding="7dp"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"
+            android:background="#9F00BCD4"
+            android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+            android:drawablePadding="5dp"
+            android:id="@+id/email"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:hint="Enter Your password"
+            android:padding="7dp"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:background="#9F00BCD4"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="5dp"
+            android:id="@+id/password"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#E91532D6"
+            android:id="@+id/checkBox1"
+            android:text="Remember Me"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#E91532D6"
+            android:id="@+id/forgetPass"
+            android:text="Forget my password"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:textSize="18dp"
+            android:text="ok"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6A1532D6"
+            android:id="@+id/btn1"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

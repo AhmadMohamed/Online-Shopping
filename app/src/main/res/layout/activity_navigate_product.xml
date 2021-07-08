@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".navigateProduct">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:id="@+id/categories"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_baseline_category_24"
+            android:layout_height="36dp"/>
+
+        <TextView
+            android:layout_width="230dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:id="@+id/choosedcat"
+            android:text="choose category"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="9dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/search_by_text"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_height="50dp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginRight="7dp"
+            android:id="@+id/search_by_voice"
+            android:src="@drawable/voice_vector"
+            android:layout_height="50dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/search"
+            android:singleLine="true"
+            android:layout_weight="2"
+            android:visibility="invisible"
+            android:hint="Enter Prodoct Name"/>
+        <Button
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:id="@+id/searchBtn"
+            android:text="ok"
+            android:visibility="invisible"
+            android:backgroundTint="@color/purple_700"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/list1"
+        android:layout_height="325dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="#77676262"
+        android:text="show added products"
+        android:id="@+id/showAddedProducts"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+</LinearLayout>

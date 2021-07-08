@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".forget_pass">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Email"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+        android:drawablePadding="6dp"
+        android:id="@+id/email"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the pin code"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/pin_code"
+        android:drawablePadding="6dp"
+        android:id="@+id/pinCode"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/btn1"
+        android:text="OK"
+        android:backgroundTint="#E91532D6"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter New Password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="6dp"
+        android:id="@+id/password"
+        android:visibility="invisible"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm your password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="6dp"
+        android:id="@+id/confirm_password"
+        android:visibility="invisible"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/changePass"
+        android:text="Change password"
+        android:backgroundTint="#E91532D6"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

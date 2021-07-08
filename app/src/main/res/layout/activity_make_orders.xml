@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".make_orders">
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/added_products"
+            android:layout_height="200dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="15dp"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:text="Order Total"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:layout_marginLeft="6dp"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:id="@+id/orderTotal"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location of delivery"
+            android:id="@+id/locOfDelivery"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:enabled="false"
+            android:id="@+id/txtAddress"
+            android:singleLine="true"
+            android:layout_marginBottom="5dp"
+            android:layout_height="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Quantity"
+            android:textSize="20dp"
+            android:layout_marginRight="12dp"
+            android:id="@+id/txtQuan"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="170dp"
+            android:id="@+id/EtxtQuan"
+            android:singleLine="true"
+            android:inputType="number"
+            android:layout_marginBottom="6dp"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/btnChangeQuan"
+        android:text="change Quantity"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/btnSubmitOrder"
+        android:text="submit order"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+        
+
+</LinearLayout>

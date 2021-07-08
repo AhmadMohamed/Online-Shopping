@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".sign_up">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sign_up" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Enter Your ID"
+            android:inputType="number"
+            android:id="@+id/cusID"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Enter Your Name"
+            android:id="@+id/cusName"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:id="@+id/cusEmail"
+            android:hint="Enter your Email" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:hint="Enter Your password"
+            android:id="@+id/cusPassword"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:hint="Enter Pin Code"
+            android:id="@+id/cusPinCode"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:hint="Enter Your birthdate"
+            android:id="@+id/cusBirthData"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/cusJob"
+            android:hint="Enter Your Job" />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:text="Male"
+                android:checked="true"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:text="Female"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:text="Register"
+        android:textSize="33dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#77676262"
+        android:id="@+id/register"
+        android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
