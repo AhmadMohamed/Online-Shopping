@@ -1,6 +1,6 @@
 # Online Shopping 
-Facilities of the application: 
-Sign up & login facilities.
+# Facilities of the application: 
+# Sign up & login facilities.
 Facility to navigate categories and products
 Facility to Search by text, voice and barcode (using Camera)
 Facility to add several products to the shopping cart.
